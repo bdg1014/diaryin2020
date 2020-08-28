@@ -1,0 +1,9 @@
+function askQuestion(question) {
+	var answer = prompt(question[0],'');
+	if ((""+answer).toLowerCase() == (""+question[1]).toLowerCase()) {
+		alert('Correct!');
+		score++;
+	} else { 
+		alert('Sorry the correct answer is ' + question[1]);
+	}
+}
